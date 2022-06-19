@@ -1,0 +1,23 @@
+.song-info {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 3rem 0;
+    width: 25%;
+    border-radius: 50%;
+    border: 4px solid lightcoral;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-info {
+    img {
+      width: 65%;
+    }
+  }
+}

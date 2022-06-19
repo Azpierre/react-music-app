@@ -1,0 +1,41 @@
+.nav {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    color: rgb(83, 83, 83);
+  }
+
+  button {
+    background: white;
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+    padding: 0.6rem;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: none;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      background: rgb(78, 78, 78);
+      transition: all 0.3s ease;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    h1 {
+      opacity: 0;
+    }
+    button {
+      z-index: 2;
+      position: absolute;
+      left: 80%;
+      font-size: 12px;
+      padding: 0.4rem;
+    }
+  }
+}
